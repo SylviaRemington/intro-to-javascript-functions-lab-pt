@@ -144,12 +144,55 @@ Complete the exercise in the space below:
 
 //EXERCISE 6 ANSWER
 function maxOfThree (numA, numB, numC) {
-    if (numA > numB || numA > numC) {
+    if (numA > numB && numA > numC) {
         return numA;
-    } else if (numB > numA || numB > numC) {
+    } else if (numB > numA && numB > numC) {
         return numB;
     } else {
         return numC;
     }
 }
 console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
+
+
+/*
+Exercise 7: calculateTip()
+
+Create a function called calculateTip. It should take two arguments: 
+the bill amount and the tip percentage (as a whole number). 
+The function should return the amount of the tip.
+
+Example: calculateTip(50, 20) should return 10.
+
+Complete the exercise in the space below:
+*/
+
+//FIRST TRY - INCORRECT CAUSE I WAS ADDING THE TOTAL BILL AMOUNT with tip instead of the tip percentage
+// function calculateTip (billAmount, tipPercentage){
+//     return billAmount + tipPercentage;
+// }
+
+//SECOND TRY - I realize I'm just multiplying and need to create a percentage equation of the tipPercentage
+// function calculateTip (billAmount, tipPercentage) {
+//     return billAmount * tipPercentage; //how do I create a decimal for this?
+// }
+// console.log('Exercise 7 Result:', calculateTip(50, 20));
+
+//THIRD TRY - adding percentage... but I think I did a return too early and it stopped the function from completing
+// function calculateTip (billAmount, tipPercentage) {
+//     return billAmount * tipPercentage; 
+//     return tipPercentage = tipPercentage / 100; 
+    //attempting to divide tip Percentage by 100... not working yet
+// }
+// console.log('Exercise 7 Result:', calculateTip(50, 20));
+
+//EXERCISE 7 CORRECT ANSWER - yay! finally did it
+function calculateTip (billAmount, tipPercentage) {
+    tipPercentage = tipPercentage / 100; 
+    return billAmount * tipPercentage; 
+  
+}
+console.log('Exercise 7 Result:', calculateTip(50, 20));
+
+
+
