@@ -37,7 +37,7 @@ Example: isAdult(21) should return 'Adult'.
 Complete the exercise in the space below:
 */
 
-//EXERCISE 2 ANSWER - using numbers related to United States rules
+//EXERCISE 2 ANSWER - using numbers related to United States AND UK rules, for two different functions.
 function isAdult(ageInUsa){
     if (ageInUsa >= 21) {
         return 'isAdult';
@@ -46,4 +46,40 @@ function isAdult(ageInUsa){
     }
 }
 
-console.log('Exercise 2 Result:', isAdult(21));
+console.log('Exercise 2 in the USA Result:', isAdult(21));
+
+function isAdult(ageInUk){
+    if (ageInUk >= 18) {
+        return 'isAdult';
+    } else {
+        return 'isMinor';
+    }
+}
+
+console.log('Exercise 2 in the UK Result:', isAdult(21));
+
+
+/*
+Exercise 3: isCharAVowel()
+
+Write a function named isCharAVowel that takes a single character as 
+an argument. It should return true if the character is a vowel and 
+false otherwise. For the purposes of this exercise, the character 
+y should not be considered a vowel.
+
+Example: isCharAVowel('a') should return true.
+
+Complete the exercise in the space below:
+*/
+
+//EXERCISE 3 ANSWER
+function isCharAVowel (singleCharacter){
+    if (singleCharacter === 'a' || singleCharacter === 'e' || singleCharacter === 'i' || singleCharacter === 'o' || singleCharacter === 'u') {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log('Exercise 3 Result:', isCharAVowel("a"));
+
