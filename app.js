@@ -255,14 +255,17 @@ Complete the exercise in the space below:
 // }
 //     console.log('Exercise 8 Result:', convertTemperature(32, "C"));
 
-
+// EXERCISE 8 CORRECT ANSWER
     function convertTemperature (temperature, scale) {
         if (scale === "C") {
-            return (Celsius * 9/5) + 32; //Celsius to Fahrenheit conversion
+            return (temperature * 9/5) + 32; //Celsius to Fahrenheit conversion
         } else if (scale === "F") {
-             return (Fahrenheit - 32) * 5/9; //Fahrenheit to Celsius conversion
+             return (temperature - 32) * 5/9; //Fahrenheit to Celsius conversion
         } else {
-            return "Whew! You don't have to do any conversions."
+            return "Incorrect Input - Please use C or F.";
         }
     }
         console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+
+
+        
