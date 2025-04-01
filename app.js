@@ -218,16 +218,17 @@ Complete the exercise in the space below:
 //     }
 // console.log('Exercise 8 Result:', convertTemperature(32, "C"));
 
-
-function convertTemperature (temperature, scale) {
-    if (scale === "C") {
-        return "F";
-    } else if (scale === "F") {
-         return "C";
-    } else {
-        return "Whew! You don't have to do any conversions."
-    }
+//SECOND TRY
+// function convertTemperature (temperature, scale) {
+//     if (scale === "C") {
+//         "C" = Celsius;
+//         "F" = Fahrenheit;
+//         return (Celsius * 9/5) + 32; //Celsius to Fahrenheit conversion
+    // } else if (scale === "F") {
+    //      return (Fahrenheit - 32) * 5/9; //Fahrenheit to Celsius conversion
+//     } else {
+//         return "Whew! You don't have to do any conversions."
+//     }
        
-    }
-
-console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+//     }
+// console.log('Exercise 8 Result:', convertTemperature(32, "C"));
