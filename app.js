@@ -61,6 +61,8 @@ function isAdult(ageInUsa){
 
 console.log('Exercise 2 in the USA Result:', isAdult(21));
 
+
+//EXERCISE 2 ANSWER - Using UK legal age rules.
 function isAdult(ageInUk){
     if (ageInUk >= 18) {
         return 'isAdult';
