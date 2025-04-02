@@ -119,6 +119,10 @@ function generateEmail (name, domain) {
 
 console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
 
+//Also, could do this below if wanted to save the data for future use.
+// const createEmail = generateEmail("johnsmith", "example.com");
+// console.log ('Exercise 4 Result:', createEmail);
+
 
 /*
 Exercise 5: greetUser()
