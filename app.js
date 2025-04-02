@@ -26,6 +26,19 @@ function maxOfTwoNumbers (num1, num2) {
 console.log ('Exercise 1 Result:', maxOfTwoNumbers(3, 9));
 
 
+//EXERCISE 1 ANSWER if also want to save & store return value for the future
+function maxOfTwoNumbers (num1, num2) {
+    if (num1 >= num2){
+        return num1;
+    } else {
+        return num2;
+    }
+}
+
+const biggestNumberOfTwo = maxOfTwoNumbers(3,9);
+console.log ('Exercise 1 Result:', biggestNumberOfTwo);
+
+
 /*
 Exercise 2: isAdult()
 
@@ -302,3 +315,28 @@ function basicCalculator (numberX, numberY, operation) {
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
 
 
+
+//LEVEL UPPPPP!
+//EXERCISE 10
+/*
+Exercise 10: calculateGrade()
+
+Define a function called calculateGrade. 
+It should take a numerical score and return the corresponding letter 
+grade (A, B, C, D, F). 
+
+For example, 90 and above yields an 'A', 80-89 is a 'B', 
+and 70-79 is a 'C', 60-69 is a 'D' and anything lower than a 60 is an 'F'.
+
+Example: calculateGrade(100) should return A.
+
+Complete the exercise in the space below:
+*/
+// function calculateGrade (A, B, C, D, F) {
+//     if (A >= 90){
+//         return 'A';
+//     } else if (B)
+// }
+
+
+// console.log('Exercise 10 Result:', calculateGrade(85));
