@@ -376,3 +376,75 @@ function calculateGrade (numericalScore) {
 console.log('Exercise 10 Result:', calculateGrade(85));
 
 
+
+/*
+Exercise 11: createUsername()
+
+Define a function called createUsername. 
+It should take a first name and a last name and return a username. 
+
+The username should be a combination of the following:
+- The first three letters of the first name.
+- The first three letters of the last name.
+- The total character count of the first and last name combined.
+
+Example: createUsername('Samantha', 'Green') should return 'SamGre13'.
+
+Complete the exercise in the space below:
+*/
+
+//FIRST TRY #11
+// function createUsername (firstNameFull, lastNameFull){
+//     const nameChunk = firstName || lastName;
+//     const firstName = nameChunk.slice(0,3);
+//     const lastName = nameChunk.slice(0,3);
+//     const characterCount = length.firstNameFull + length.lastNameFull;
+//     const userName = firstName + lastName + characterCount;
+//     return userName;
+// }
+// console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+
+//Second Try #11
+// function createUsername (firstNameFull, lastNameFull){
+//     const nameChunk = firstName || lastName;
+//     const firstName = nameChunk.slice(0,3);
+//     const lastName = nameChunk.slice(0,3);
+//     const characterCount = firstNameFull.length + lastNameFull.length;
+//     const userName = firstName + lastName + characterCount;
+//     return userName;
+// }
+// console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+
+
+//EXERCISE 11 ANSWER - CORRECTED CODE
+function createUsername (firstNameFull, lastNameFull){
+    const firstNameThreeLetters = firstNameFull.slice(0,3);
+    const lastNameThreeLetters = lastNameFull.slice(0,3);
+    const characterCount = firstNameFull.length + lastNameFull.length;
+    const userName = firstNameThreeLetters + lastNameThreeLetters + characterCount;
+    return userName;
+}
+console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+
+
+/*
+Exercise 12: numArgs()
+
+Challenge yourself with numArgs. 
+This function should return the count of arguments passed to it when called.
+
+Complete the exercise in the space below:
+*/
+
+//First try - it works, but I'm realizing that 
+// I don't need the parameter since I don't know the exact number of arguments
+// function numArgs (countOfArguments){
+//     return arguments.length;
+// }
+// console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
+
+//EXERCISE 12 ANSWER
+function numArgs (){
+    return arguments.length;
+}
+console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
