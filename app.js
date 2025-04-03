@@ -338,11 +338,41 @@ Example: calculateGrade(100) should return A.
 
 Complete the exercise in the space below:
 */
+
+//First Try - Exercise 10
 // function calculateGrade (A, B, C, D, F) {
 //     if (A >= 90){
 //         return 'A';
-//     } else if (B)
+//     } else if (B === 80-89){
+//         return 'B';
+//     } else if (C === 70-79){
+//         return 'C';
+//     } else if (D === 60-69){
+//         return 'D';
+//     } else if (F < 60){
+//         return 'F';
+//     } else {
+//         return 'No grade for you!';
+//     }
 // }
-
-
 // console.log('Exercise 10 Result:', calculateGrade(85));
+
+//EXERCISE 10 ANSWER
+function calculateGrade (numericalScore) {
+    if (numericalScore >= 90){
+        return 'A';
+    } else if (numericalScore >= 80 && numericalScore <=89 ){
+        return 'B';
+    } else if (numericalScore >= 70 && numericalScore <=79 ){
+        return 'C';
+    } else if (numericalScore >= 60 && numericalScore <=69 ){
+        return 'D';
+    } else if (numericalScore < 60){
+        return 'F';
+    } else {
+        return 'No grade for you!';
+    }
+}
+console.log('Exercise 10 Result:', calculateGrade(85));
+
+
