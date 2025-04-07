@@ -449,3 +449,6 @@ function numArgs (){
     return arguments.length;
 }
 console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
+
+
+//Hi I'm adding more notes...
