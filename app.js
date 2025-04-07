@@ -1,4 +1,5 @@
 //FROM March 24TH, 2025 SOFTWARE ENGINEERING PT BOOTCAMP - TRISTAN HALL CLASS 
+//from second week in Tristan Hall's Class
 /*
 Exercise 1: maxOfTwoNumbers()
 
@@ -450,5 +451,3 @@ function numArgs (){
 }
 console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
 
-
-//Hi I'm adding more notes...
