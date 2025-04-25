@@ -215,6 +215,28 @@ function calculateTip (billAmount, tipPercentage) {
 }
 console.log('Exercise 7 Result:', calculateTip(50, 20));
 
+// Here's another version too that I'm putting in after I finished and submitted the assignment:
+// function calculateTip(billAmount, tipPercentage) {
+//     let tipDecimal = tipPercentage / 100;
+//     let tipAmount = billAmount * tipDecimal;
+//     return tipAmount;
+// }
+// console.log('Exercise 7 Result:', calculateTip(50, 20));
+
+// Alsooooo, could do these versions as well:
+// function calculateTip(billAmount, tipPercentage) {
+//     return (billAmount * tipPercentage) / 100;
+// }
+// console.log('Exercise 7 Result:', calculateTip(50, 20));
+
+// function calculateTip(billAmount, tipPercentage) {
+//     let tipAmount = (billAmount * tipPercentage) / 100;
+//     return tipAmount;
+// }
+
+// console.log('Exercise 7 Result:', calculateTip(50, 20));
+
+
 
 /*
 Exercise 8: convertTemperature()
@@ -359,6 +381,7 @@ Complete the exercise in the space below:
 // }
 // console.log('Exercise 10 Result:', calculateGrade(85));
 
+
 //EXERCISE 10 ANSWER
 function calculateGrade (numericalScore) {
     if (numericalScore >= 90){
@@ -376,6 +399,8 @@ function calculateGrade (numericalScore) {
     }
 }
 console.log('Exercise 10 Result:', calculateGrade(85));
+
+//Also, could do a switch function since there are so many else ifs.
 
 
 
